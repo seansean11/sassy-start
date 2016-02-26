@@ -1,0 +1,56 @@
+// --------------------------------------------------
+// TYPOGRAPHY VARIABLES
+// --------------------------------------------------
+
+$font-paragraph: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$font-header: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$font-paragraph-lh: 1.6;
+$font-header-lh: 1.4;
+
+// --------------------------------------------------
+// BREAKPOINT VARIABLES
+// --------------------------------------------------
+
+$breakpoints: (
+  xsm: 420px,
+  sm: 767px,
+  md: 992px,
+  lg: 1080px,
+  xlg: 1260px
+);
+
+// --------------------------------------------------
+// COLOR VARIABLES
+// --------------------------------------------------
+
+$colors: (
+  fuchsia: #610E20,
+  lime: #00ff00,
+  olive: #808000,
+  purple: #800080,
+  blue: #0000ff,
+  red: #C70630,
+  green: #19DB6A,
+  yellow: #E4E221,
+  white: #fff,
+  gray1: #eee,
+  gray2: #aaa,
+  gray3: #555,
+  gray4: #333
+);
+
+// ---------------------- Base Colors
+$color-primary: map-get($colors, $blue);
+$color-secondary: map-get($colors, $olive);
+$color-tertiary: map-get($colors, $purple);
+$color-success: map-get($colors, $green);
+$color-alert: map-get($colors, $yellow);
+$color-error: map-get($colors, $red);
+
+// ---------------------- Applied Colors
+$color-background: map-get($colors, $white);
+$color-paragraph: map-get($colors, $gray4);
+$color-header: map-get($colors, $gray3);
+$color-link: map-get($colors, $blue);
+$color-link-hover: darken(map-get($colors, $blue), 10%);
+$color-border: map-get($colors, $gray1);
